@@ -1,0 +1,74 @@
+@import url('https://fonts.googleapis.com/css?family=Playfair+Display:400,400i,700,700i');
+@import url('https://fonts.googleapis.com/css?family=PT+Sans:400,700');
+@import url('https://fonts.googleapis.com/css?family=PT+Sans|PT+Serif+Caption:400i|PT+Serif:400,400i,700,700i');
+html {
+	font: 12px/1.5 "PT Sans", "PT Serif Caption", "PT Serif";	
+}
+
+body {
+  /* display: block; */
+  /* background-position: center; */
+  padding: 0;
+  margin: 8px;
+  /* background: rgba(76, 175, 80, 0.3); */
+  background: url("./img/pets@2x-890x266.png") no-repeat fixed center;
+  /* background-repeat: no-repeat;
+  background-size: auto; */
+  /* position: relative; */
+  /* overflow: hidden; */
+  /* height: 100vh; */
+}
+
+body, table, th, td, form, input, textarea, option, select {
+  font: inherit;
+}
+
+
+
+/* 
+
+.app {
+  background: url(./img/pets-in-park-2.jpg) no-repeat center;
+}
+
+
+#container {
+  width: 100%;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  padding: 0;
+}
+
+h1, h2, h3, h4, h5, h6 {
+	line-height: 1.2;	
+}
+
+h1 { font-size: 2.2rem; }
+h2 { font-size: 2.0rem; }
+h3 { font-size: 1.8rem; }
+h4 { font-size: 1.6rem; }
+h5 { font-size: 1.4rem; }
+h6 { font-size: 1.2rem; }
+
+ul, ol {
+	padding-bottom: 1.5em;
+}
+
+ul, ol {
+	padding-left: 2em;
+}
+
+li {
+	list-style-position: inside;
+}
+
+blockquote {
+	width: 80%;
+	margin: 0 auto;
+	border-left: 4px solid #DDD;
+	font-style: italic;	
+	padding: 1rem 2rem;
+	position: relative;
+} */

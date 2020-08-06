@@ -1,0 +1,38 @@
+header {
+    display: inline-block;
+    /* flex-wrap: wrap;  */
+    letter-spacing: 0.05rem;
+    /* background: #234465; */
+    padding: 0.5rem 0.5rem;
+    color: white;
+    width: 98%;
+  }
+  
+  ul {
+    /* position: relative; */
+    text-align: center;
+    /* justify-content: center; */
+    /* overflow-y: hidden; */
+    margin: 0;
+    padding: 0;
+  }
+  
+  li {
+    float: left;
+    display: block;
+    text-decoration: none;
+    /* align-self: center;   */
+    text-align: center;
+    margin-right: 5px;
+    background-color: chocolate;
+    width: 150px;
+    height: 25px;
+    /* cursor: pointer; */
+    padding-top: 6px;
+  }
+
+li:hover {
+  background: rgb(248, 215, 107);
+  color: rgb(0, 0, 0);
+  font-weight: bold;
+}
