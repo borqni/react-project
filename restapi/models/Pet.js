@@ -5,11 +5,24 @@ const { String, Number, Boolean, ObjectId } = Schema.Types;
 
 const petSchema = new Schema({
 
-    description: {
+    name: {
         type: String,
         required: true,
     },
 
+    categorie: {
+        type: String,
+        required: true,
+    },
+    
+    image: {
+        type: String,
+        required: true,
+    },
+
+    like: {
+        type: Number
+    },
 
     author: {
         type: ObjectId,
