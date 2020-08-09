@@ -8,10 +8,10 @@ module.exports = {
     },
 
     post: (req, res, next) => {
-        const { description } = req.body;
+        const { name, categorie, image, like } = req.body;
         const { _id } = req.user;
 
-        models.Pet.create({ description, author: _id })
+        models.Pet.create({ name, categorie, image, like, author: _id })
             .then((createdPet) => {
                 return Promise.all([
                     models.User.updateOne({ _id }, { $push: { posts: createdPet } }),

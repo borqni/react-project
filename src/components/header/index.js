@@ -6,13 +6,18 @@ const Header = () => {
     return (
         <header className={styles.header}>
             <ul>
-                {/* <Nav href="#" title="logo" /> */}
-                <Nav href="#" title="Zoo news" />
-                <Nav href="#" title="All Pets" />
-                <Nav href="#" title="Profile" />
-                <Nav href="#" title="Logout" />
-                <Nav href="#" title="Register" />
-                <Nav href="#" title="Login" />
+                <section className={styles.left}>
+                    <Nav href="#" title="Новини" />
+                    <Nav href="#" title="Добави новина" />
+                    <Nav href="#" title="Животни" />
+                    <Nav href="#" title="Добави животно" />
+                </section>
+                <section className={styles.right}>
+                    <Nav href="#" title="Профил" />
+                    <Nav href="#" title="Изход" />
+                    <Nav href="#" title="Регистрация" />
+                    <Nav href="#" title="Вход" />
+                </section>
             </ul>
         </header>
     )
