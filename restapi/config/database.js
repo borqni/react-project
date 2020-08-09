@@ -1,13 +1,6 @@
 const mongoose = require('mongoose');
-const dbString = require('./config').dbUrl+'Tripps-1';
-const rdyString = `${'*'.repeat(10)}Database is Ready${'*'.repeat(10)}`;//
+const config = require('./config');
 
 module.exports = () => {
-    return mongoose.connect(dbString, {
-        useNewUrlParser: true, //not neccessary needed
-        useUnifiedTopology: true,
-        useCreateIndex: true
-    },
-    console.log(rdyString)
-    );
+    return mongoose.connect(config.dbURL, { useNewUrlParser: true, useUnifiedTopology: true });
 };

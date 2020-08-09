@@ -1,27 +1,6 @@
-@import url('https://fonts.googleapis.com/css?family=Playfair+Display:400,400i,700,700i');
-@import url('https://fonts.googleapis.com/css?family=PT+Sans:400,700');
-@import url('https://fonts.googleapis.com/css?family=PT+Sans|PT+Serif+Caption:400i|PT+Serif:400,400i,700,700i');
-html {
-	font: 12px/1.5 "PT Sans", "PT Serif Caption", "PT Serif";	
-}
 
-body {
-  /* display: block; */
-  /* background-position: center; */
-  padding: 0;
-  margin: 8px;
-  /* background: rgba(76, 175, 80, 0.3); */
-  background: url("./img/pets@2x-890x266.png") no-repeat fixed center;
-  /* background-repeat: no-repeat;
-  background-size: auto; */
-  /* position: relative; */
-  /* overflow: hidden; */
-  /* height: 100vh; */
-}
 
-body, table, th, td, form, input, textarea, option, select {
-  font: inherit;
-}
+
 
 
 

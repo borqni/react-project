@@ -1,23 +1,20 @@
 const jwt = require('jsonwebtoken');
-const {secret} = require('../config/config');
+const secret = 'shhhhh';
 
-//TODO
+function createToken(data) {
+    return jwt.sign(data, secret, { expiresIn: '1h' });
+}
+
+function verifyToken(token) {
+    return new Promise((resolve, reject) => {
+        jwt.verify(token, secret, (err, data) => {
+            if (err) { reject(err); return; }
+            resolve(data);
+        });
+    });
+}
 
 module.exports = {
-    createToken(data) {
-        return jwt.sign({_id: data._id}, secret, {expiresIn: '1h'})
-    },
-
-    verifyToken(token) {
-        return new Promise((resolve, reject )=>{
-            jwt.verify(token, secret, (err, data) =>{
-                if(err){
-                    reject(err);
-                    return;
-                }
-                resolve(data);
-                return;
-            })
-        })
-    }
-}; 
+    createToken,
+    verifyToken
+}

@@ -1,20 +1,19 @@
 import React from 'react'
-import './index.module.css'
+import Nav from '../navigation'
+import styles from './index.module.css'
 
 const Header = () => {
     return (
-        <header>
-            <nav>
-                <ul>
-                    <li>logo</li>
-                    <li>Feature</li>
-                    <li>All Pets</li>
-                    <li>Welcome, 'user'!</li>
-                    <li>Logout</li>
-                    <li>Register</li>
-                    <li>Login</li>
-                </ul>
-            </nav>
+        <header className={styles.header}>
+            <ul>
+                {/* <Nav href="#" title="logo" /> */}
+                <Nav href="#" title="Zoo news" />
+                <Nav href="#" title="All Pets" />
+                <Nav href="#" title="Profile" />
+                <Nav href="#" title="Logout" />
+                <Nav href="#" title="Register" />
+                <Nav href="#" title="Login" />
+            </ul>
         </header>
     )
 }
