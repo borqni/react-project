@@ -9,14 +9,42 @@ const SharePet = () => {
     return (
         <Container>
             <Title title="Добавете домашния си любимец" />
-            <div className={styles.container}>
-                <div>
-                    <textarea>Post</textarea>
-                </div>
-                <div>
-                    <Submit title="Post" />
-                </div>
-            </div>
+            {
+                <section className={styles.create}>
+                    <form action="#" method="post">
+                        <fieldset>
+                            <legend>Add new Pet</legend>
+                            <p class="field">
+                                <label for="name">Name</label>
+                                <span class="input">
+                                    <input type="text" name="name" id="name" placeholder="Name" />
+                                    <span class="actions"></span>
+                                </span>
+                            </p>
+                            <p class="field">
+                                <label for="image">Image</label>
+                                <span class="input">
+                                    <input type="text" name="imageURL" id="image" placeholder="Image" />
+                                    <span class="actions"></span>
+                                </span>
+                            </p>
+                            <p class="field">
+                                <label for="category">Category</label>
+                                <span class="input">
+                                    <select type="text" name="category">
+                                        <option>Cat</option>
+                                        <option>Dog</option>
+                                        <option>Other</option>
+                                    </select>
+                                    <span class="actions"></span>
+                                </span>
+                            </p>
+                            <Submit title="Добави" />
+                            {/* <input class="button" type="submit" class="submit" value="Add Pet" /> */}
+                        </fieldset>
+                    </form>
+                </section>
+            }
         </Container>
     )
 }
