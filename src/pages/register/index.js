@@ -51,30 +51,30 @@ class Register extends Component {
             <Container>
                 <section className={styles.register}>
                     <Title title="Регистрация" />
-                    {/* <form action="#" method="post"> */}
-                    <fieldset>
-                        <legend>Register</legend>
-                        <Input
-                            type="text"
-                            value={username}
-                            onChange={(event) => this.onChange(event, 'username')}
-                            label="Username"
-                            id="username" />
-                        <Input
-                            type="password"
-                            value={password}
-                            onChange={(event) => this.onChange(event, 'password')}
-                            label="Password"
-                            id="password" />
-                        <Input
-                            type="password"
-                            value={rePassword}
-                            onChange={(event) => this.onChange(event, 'rePassword')}
-                            label="Re-Password"
-                            id="re-password" />
-                        <Submit title="Регистриране" />
-                    </fieldset>
-                    {/* </form> */}
+                    <form onSubmit={this.onSubmit}>
+                        <fieldset>
+                            <legend>Register</legend>
+                            <Input
+                                type="text"
+                                value={username}
+                                onChange={(event) => this.onChange(event, 'username')}
+                                label="Username"
+                                id="username" />
+                            <Input
+                                type="password"
+                                value={password}
+                                onChange={(event) => this.onChange(event, 'password')}
+                                label="Password"
+                                id="password" />
+                            <Input
+                                type="password"
+                                value={rePassword}
+                                onChange={(event) => this.onChange(event, 'rePassword')}
+                                label="Re-Password"
+                                id="re-password" />
+                            <Submit title="Регистриране" />
+                        </fieldset>
+                    </form>
                 </section>
             </Container>
         )

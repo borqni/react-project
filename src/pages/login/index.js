@@ -49,25 +49,25 @@ class Login extends Component {
             <Container>
                 <section className={styles.login}>
                     <Title title="Вход" />
-                    {/* <form onSubmit={this.onSubmit}> */}
-                    <fieldset>
-                        <legend>Login</legend>
-                        <Input
-                            // type="text"
-                            value={username}
-                            onChange={(event) => this.onChange(event, 'username')}
-                            label="Username"
-                            id="username" />
-                        <Input
-                            type="password"
-                            value={password}
-                            onChange={(event) => this.onChange(event, 'password')}
-                            label="Password"
-                            id="password" />
-                        <Submit title="Влез" />
-                        {/* <input class="button" type="submit" class="submit" value="Login" /> */}
-                    </fieldset>
-                    {/* </form> */}
+                    <form onSubmit={this.onSubmit}>
+                        <fieldset>
+                            <legend>Login</legend>
+                            <Input
+                                // type="text"
+                                value={username}
+                                onChange={(event) => this.onChange(event, 'username')}
+                                label="Username"
+                                id="username" />
+                            <Input
+                                type="password"
+                                value={password}
+                                onChange={(event) => this.onChange(event, 'password')}
+                                label="Password"
+                                id="password" />
+                            <Submit title="Влез" />
+                            {/* <input class="button" type="submit" class="submit" value="Login" /> */}
+                        </fieldset>
+                    </form>
                 </section>
             </Container>
         )

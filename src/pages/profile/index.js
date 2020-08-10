@@ -4,6 +4,7 @@ import Submit from '../../components/submit-button'
 import Container from "../../components/container";
 import Input from "../../components/input";
 import Pet from "../../components/pet";
+import UserContext from "../../Context";
 
 class Profile extends Component {
     constructor(props) {
@@ -16,12 +17,14 @@ class Profile extends Component {
         }
     }
 
+    static contextType = UserContext
+
     componentDidMount() {
         this.getUser(this.props.match.params.userId)
     }
 
     getUser = async (id) => {
-        const response = await fetch(`http://localhost:3000/user?id=${id}`)
+        const response = await fetch(`http://localhost:9999/api/user?id=${id}`)
 
         if (!response.ok) {
             this.props.history.push('/error')
@@ -31,8 +34,14 @@ class Profile extends Component {
 
         this.setState = ({
             username: user.username,
-            pets: user.pets.length
+            image: user.image,
+            pets: user.pets && user.pets.length
         })
+    }
+
+    logout = () => {
+        this.context.logout()
+        this.props.history.push('/')
     }
 
     render() {
@@ -40,18 +49,18 @@ class Profile extends Component {
 
         return (
             <Container>
-
-                <div className={styles.profile}>
-                    <img className={styles.profileImg} src={image} />
+                <div >
+                    <img src={image} />
                     <div className={styles.profileInfo}>
-                        <p>Username: <small>{username}</small></p>
-                        <p className={styles.infoType}>Has {pets} pets </p>
+                        <p>Username: {username}</p>
+                        <p >Has {pets} pets </p>
                         <div className={styles.myPets}>
                             {/* pets.map(pet) */}
-                            <p>{pets}</p>
                         </div>
                     </div>
+                    <button onClick={this.logout}>Logout</button>
                 </div>
+                <Pet />
             </Container>
         )
     }
