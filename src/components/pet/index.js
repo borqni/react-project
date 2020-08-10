@@ -2,6 +2,7 @@ import React from 'react'
 import styles from './index.module.css'
 
 const Pet = ({ name, categorie, image, author }) => {
+    
     return (
         <span className={styles.pet}>
             <h5 className={styles.title}>Име: {name}</h5>
