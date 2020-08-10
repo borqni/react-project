@@ -1,16 +1,15 @@
-
 import React from 'react'
 import styles from './index.module.css'
 import Title from '../../components/title'
 import Submit from '../../components/submit-button'
 
-const Register = () => {
+const Login = () => {
     return (
-        <section className={styles.register}>
-            <Title title="Регистрация" />
+        <section className={styles.login}>
+            <Title title="Вход" />
             <form action="#" method="post">
                 <fieldset>
-                    <legend>Register</legend>
+                    <legend>Login</legend>
                     <p class="field">
                         <label for="username">Username</label>
                         <span class="input">
@@ -27,20 +26,12 @@ const Register = () => {
                             <i class="fas fa-key"></i>
                         </span>
                     </p>
-                    <p class="field">
-                        <label for="password">Repeat Password</label>
-                        <span class="input">
-                            <input type="password" name="re-password" id="re-password" placeholder="Password" />
-                            <span class="actions"></span>
-                            <i class="fas fa-key"></i>
-                        </span>
-                    </p>
-                    {/* <input class="button" type="submit" class="submit" value="Register" /> */}
-                    <Submit title="Регистриране" />
+                    <Submit title="Влез" />
+                    {/* <input class="button" type="submit" class="submit" value="Login" /> */}
                 </fieldset>
             </form>
         </section>
     )
 }
 
-export default Register
+export default Login
