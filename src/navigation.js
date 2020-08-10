@@ -18,11 +18,10 @@ const Navigation = () => {
                 <Route path="/register" component={Register} />
                 <Route path="/login" component={Login} />
                 <Route path="/profile/:userid" component={Profile} />
-                {/* <Route path="/sharePet" component={SharePet} /> */}
+                <Route path="/sharePet" component={SharePet} />
                 <Route component={Error} />
             </Switch>
         </BrowserRouter>
-
     )
 }
 

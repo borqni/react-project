@@ -1,1 +1,1 @@
-npm install nodemoon --save-dev
+npm install nodemon --save-dev

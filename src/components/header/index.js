@@ -3,16 +3,15 @@ import Nav from '../navigation'
 import styles from './index.module.css'
 import getNavigation from '../../utils/navigation'
 import UserContext from '../../Context'
-import { Link } from 'react-router-dom'
 
 class Header extends Component {
 
     static contextType = UserContext
 
     render() {
-        const { loggedIn, user } = this.context
+        const { user } = this.context
 
-        const links = getNavigation(loggedIn, user)
+        const links = getNavigation(user)
 
         return (
             <header className={styles.header}>
