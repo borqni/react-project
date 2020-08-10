@@ -5,7 +5,7 @@ import { Link } from 'react-router-dom'
 const Nav = ({ title, href }) => {
     return (
         <div className={styles.li}>
-            <Link href={href} className={styles.a}>
+            <Link to={href} className={styles.a}>
                 {title}
             </Link>
         </div>

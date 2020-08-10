@@ -4,12 +4,12 @@ import styles from './index.module.css'
 // import Submit from '../../components/submit-button'
 // import Container from "../../components/container";
 
-const Input = ({ label, id, value, onChange }) => {
+const Input = ({ label, id, value, onChange, type }) => {
     return (
         <p className={styles.field}>
             <label htmlFor={id}>
                 {label}:
-                <input value={value} onChange={onChange} id={id} />
+                <input type={type || 'text'} value={value} onChange={onChange} id={id} />
             </label>
         </p>
     )

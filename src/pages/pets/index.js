@@ -14,7 +14,7 @@ class Pets extends Component {
     }
 
     getPets = async () => {
-        const promise = await fetch('http://localhost:3000/api/pets')
+        const promise = await fetch('http://localhost:3000/pets')
         const pets = await promise.json()
 
         this.setState({

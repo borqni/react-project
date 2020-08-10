@@ -21,7 +21,7 @@ class Profile extends Component {
     }
 
     getUser = async (id) => {
-        const response = await fetch(`http://localhost:3000/api/user?id=${id}`)
+        const response = await fetch(`http://localhost:3000/user?id=${id}`)
 
         if (!response.ok) {
             this.props.history.push('/error')
