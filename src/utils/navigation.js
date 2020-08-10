@@ -1,14 +1,12 @@
-import authenticate from "./authenticate"
-
-const getNavigation = (loggedIn, user) => {
+const getNavigation = (user) => {
 
     const authLinks = [
         {
-            title: "Новини",
+            title: "Статии",
             link: "/posts"
         },
         {
-            title: "Добави новина",
+            title: "Добави статия",
             link: "/sharePost"
         },
         {
@@ -31,7 +29,7 @@ const getNavigation = (loggedIn, user) => {
 
     const guestLinks = [
         {
-            title: "Новини",
+            title: "Статии",
             link: "/posts"
         },
         {
@@ -44,6 +42,7 @@ const getNavigation = (loggedIn, user) => {
         }
     ]
 
+    const loggedIn = user && user.loggedIn
     return loggedIn ? authLinks : guestLinks
 }
 
