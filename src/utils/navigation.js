@@ -1,48 +1,50 @@
-const getNavigation = (userId) => {
+import authenticate from "./authenticate"
 
-    const links = [
+const getNavigation = (loggedIn, user) => {
+
+    const authLinks = [
         {
             title: "Новини",
-            link: "/news"
+            link: "/posts"
         },
-
         {
             title: "Добави новина",
-            link: "/shareNew"
+            link: "/sharePost"
         },
-
         {
             title: "Животни",
             link: "/pets"
         },
-
         {
             title: "Добави животно",
             link: "/sharePet"
         },
-
         {
             title: "Профил",
-            link: `/profile/${userId}`
+            link: `/profile/${user && user.id}`
         },
-
         {
             title: "Изход",
             link: "/logout"
-        },
+        }
+    ]
 
+    const guestLinks = [
+        {
+            title: "Новини",
+            link: "/posts"
+        },
         {
             title: "Вход",
             link: "/login"
         },
-
         {
             title: "Регистрация",
             link: "/register"
         }
     ]
 
-    return links
+    return loggedIn ? authLinks : guestLinks
 }
 
 export default getNavigation
