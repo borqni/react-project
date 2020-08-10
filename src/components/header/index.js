@@ -1,24 +1,18 @@
 import React from 'react'
 import Nav from '../navigation'
 import styles from './index.module.css'
+import getNavigation from '../../utils/navigation'
 
 const Header = () => {
+    const links = getNavigation()
+
     return (
         <header className={styles.header}>
-            <ul>
-                <section className={styles.left}>
-                    <Nav href="#" title="Новини" />
-                    <Nav href="#" title="Добави новина" />
-                    <Nav href="#" title="Животни" />
-                    <Nav href="#" title="Добави животно" />
-                </section>
-                <section className={styles.right}>
-                    <Nav href="#" title="Профил" />
-                    <Nav href="#" title="Изход" />
-                    <Nav href="#" title="Регистрация" />
-                    <Nav href="#" title="Вход" />
-                </section>
-            </ul>
+            {
+                links.map(nav => {
+                    <Nav key={nav.title} href={nav.link} title={nav.title} type="header" />
+                })
+            }
         </header>
     )
 }

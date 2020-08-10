@@ -1,13 +1,13 @@
 import React from 'react'
-// import styles from './index.module.css'
+import styles from './index.module.css'
 
-const Pet = ({ name, categorie, image }) => {
+const Pet = ({ name, categorie, image, author }) => {
     return (
-        <span>
-            <h5>Име: {name}</h5>
-            <p>Вид: {categorie}</p>
-            <p className="image"> {image}</p>
-            {/* <p className="description">Това животно е на {uer}</p> */}
+        <span className={styles.pet}>
+            <h5 className={styles.title}>Име: {name}</h5>
+            <p className={styles.categorie}>Вид: {categorie}</p>
+            <img className={styles.image} src={image} />
+            <p className={styles.author}>Това животно е на {author.username}</p>
             {/* <div className="petInfo"> */}
             {/* <button className={styles.button}> Like </button> */}
             {/* <a href="#"><button className={styles.button}>Details</button></a> */}

@@ -1,13 +1,14 @@
 import React from 'react'
 import styles from './index.module.css'
+import { Link } from 'react-router-dom'
 
 const Nav = ({ title, href }) => {
     return (
-        <li className={styles.li}>
-            <a href={href} className={styles.a}>
+        <div className={styles.li}>
+            <Link href={href} className={styles.a}>
                 {title}
-            </a>
-        </li>
+            </Link>
+        </div>
     )
 }
 

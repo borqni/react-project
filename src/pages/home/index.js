@@ -1,7 +1,8 @@
 import React, { Component } from 'react'
-// import Nav from '../navigation'
-import Pet from '../pet'
+import Container from '../../components/container'
 import styles from './index.module.css'
+import Pet from '../../components/pet'
+import Title from '../../components/title'
 
 class Pets extends Component {
     constructor(props) {
@@ -26,7 +27,7 @@ class Pets extends Component {
 
         return pets.map(pet => {
             return (
-                <Pet key={pet._id} {...pet}/>
+                <Pet key={pet._id} {...pet} />
             )
         })
     }
@@ -36,21 +37,21 @@ class Pets extends Component {
     }
 
     render() {
-        const { pets } = this.state
-
         return (
-            <div className={styles.main}>
-                <h1 >Нашите домашни любимци</h1>
+            <Container>
+
+                <Title title="Нашите домашни любимци" />
                 {/* <nav className={styles.petsNav}>
                     <Nav href="#" title="Всички" />
                     <Nav href="#" title="Котки" />
                     <Nav href="#" title="Кучета" />
                     <Nav href="#" title="Други" />
                 </nav> */}
-                <div key={pets}>
+                <div className={styles.container}>
                     {this.renderPets()}
                 </div>
-            </div >
+
+            </Container >
         )
     }
 }
