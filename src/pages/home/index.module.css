@@ -1,0 +1,21 @@
+
+ul {
+  flex-wrap: wrap;
+  justify-content: space-around;
+  display: flex;
+
+}
+
+ul li:not(:last-child) {
+  padding-right: 1rem;
+}
+
+
+
+h4 {
+  margin-bottom: 0;
+}
+
+.petInfo {
+  padding-bottom: 1rem;
+}

@@ -1,3 +1,99 @@
+@import url('https://fonts.googleapis.com/css?family=Playfair+Display:400,400i,700,700i');
+@import url('https://fonts.googleapis.com/css?family=PT+Sans:400,700');
+@import url('https://fonts.googleapis.com/css?family=PT+Sans|PT+Serif+Caption:400i|PT+Serif:400,400i,700,700i');
+html {
+	font: 12px/1.5 "PT Sans", "PT Serif Caption", "PT Serif";	
+}
+
+body {
+  padding: 0;
+  margin: 8px;
+
+  background: url("./img/Animal-Blessing-Graphic.png") no-repeat fixed center;
+  background-size: 90% 80%;      
+  
+  /* background: url("./img/apah24slide1.png") no-repeat fixed center;
+  background-size: auto;    */
+
+  /* background: url("./img/pets-1.png") no-repeat fixed center;
+  background-size: 100% 100%;     */
+
+  /* background: url("./img/Experienced-Pet-Groomer-Carmichael-CA1.jpg") no-repeat fixed center; */
+  
+  /* background: url("./img/pets@2x-890x266.png") no-repeat fixed center;
+  background-size: 90% 80%;      */
+
+  /* background: url("./img/pets-3.png") no-repeat fixed center;
+  background-size: 90% 80%;       */
+  
+  /* background: url("./img/Pets-Animals-Directory.jpg") no-repeat fixed center;
+  background-size: 100% 70%;         */
+  
+  /* background: url("./img/pets-in-park-2.jpg") no-repeat fixed;
+  background-size: 100% 95%;        */
+  
+  /* display: block; */
+  /* background: rgba(76, 175, 80, 0.3); */
+  /* position: relative; */
+  /* overflow: hidden; */
+  height: 98vh;
+}
+
+#root {
+  width: 100%;
+  display: flex;
+  /* margin: 0 ; */
+  margin: 0 auto;
+  padding: 0;
+  flex-direction: column;
+  /* /* min-height: 100vh; */
+} 
+
+h1, h2, h3, h4, h5, h6 {
+	line-height: 1.2;	
+}
+
+h1 { font-size: 2.2rem; }
+h2 { font-size: 2.0rem; }
+h3 { font-size: 1.8rem; }
+h4 { font-size: 1.6rem; }
+h5 { font-size: 1.4rem; }
+h6 { font-size: 1.2rem; }
+
+.main {
+  background: linear-gradient(rgba(250, 248, 248, 0.2), rgba(25, 167, 173, 0.2)),  no-repeat center;
+  background-size: cover;
+  height: 85vh;
+  position: relative;
+  overflow: hidden;
+  text-align: center;
+}
+
+a {
+  text-decoration: none;
+  display: inline-block;
+}
+
+li {
+  list-style-type: none;
+}
+
+.button {
+  display: block;
+  padding: 0.6rem 1rem;
+  border-radius: 0.4rem;
+  text-decoration: none;
+  font-weight: bold;
+  background: chocolate;
+  color: rgb(255, 255, 255);
+  border: none;
+  font-size: 1rem;
+}
+
+/* .petsNav {
+  display: flex;
+  justify-content: center;
+} */
 
 
 
