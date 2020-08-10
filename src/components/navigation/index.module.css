@@ -1,4 +1,4 @@
-li {
+.li {
     /* float: left; */
     display: inline-block;
     text-decoration: none;
@@ -12,12 +12,12 @@ li {
     cursor: pointer;
 }
 
-a {
+.a {
     text-decoration: none;
     color: azure;
 }
 
-li:hover {
+.li:hover {
     background: rgb(202, 150, 107);
     color: rgb(0, 0, 0);
     font-weight: bold;

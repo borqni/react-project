@@ -1,37 +1,55 @@
-import React from 'react'
+import React, { Component } from 'react'
 import styles from './index.module.css'
 import Title from '../../components/title'
 import Submit from '../../components/submit-button'
+import Container from "../../components/container";
+import Input from "../../components/input";
 
-const Login = () => {
-    return (
-        <section className={styles.login}>
-            <Title title="Вход" />
-            <form action="#" method="post">
-                <fieldset>
-                    <legend>Login</legend>
-                    <p class="field">
-                        <label for="username">Username</label>
-                        <span class="input">
-                            <input type="text" name="username" id="username" placeholder="Username" />
-                            <span class="actions"></span>
-                            <i class="fas fa-user"></i>
-                        </span>
-                    </p>
-                    <p class="field">
-                        <label for="password">Password</label>
-                        <span class="input">
-                            <input type="password" name="password" id="password" placeholder="Password" />
-                            <span class="actions"></span>
-                            <i class="fas fa-key"></i>
-                        </span>
-                    </p>
-                    <Submit title="Влез" />
-                    {/* <input class="button" type="submit" class="submit" value="Login" /> */}
-                </fieldset>
-            </form>
-        </section>
-    )
+class Login extends Component {
+    constructor(props) {
+        super(props)
+
+        this.state = {
+            email: '',
+            password: ''
+        }
+    }
+
+    onChange = (event, type) => {
+        const newState = {}
+        newState[type] = event.target.value
+    }
+
+    render() {
+        const { email, password } = this.state
+
+        return (
+            <Container>
+                <section className={styles.login}>
+                    <Title title="Вход" />
+                    <form action="#" method="post">
+                        <fieldset>
+                            <legend>Login</legend>
+                            <Input
+                                type="text"
+                                value={email}
+                                onChange={(event) => this.onChange(event, 'email')}
+                                label="Email"
+                                id="email" />
+                            <Input
+                                type="password"
+                                value={password}
+                                onChange={(event) => this.onChange(event, 'password')}
+                                label="Password"
+                                id="password" />
+                            <Submit title="Влез" />
+                            {/* <input class="button" type="submit" class="submit" value="Login" /> */}
+                        </fieldset>
+                    </form>
+                </section>
+            </Container>
+        )
+    }
 }
 
 export default Login
