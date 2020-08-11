@@ -1,4 +1,5 @@
-import React, { Component } from 'react'
+import React, { useState, useContext } from 'react'
+import { useHistory } from "react-router-dom"
 import styles from './index.module.css'
 import Title from '../../components/title'
 import Submit from '../../components/submit-button'
@@ -7,79 +8,60 @@ import Input from "../../components/input";
 import authenticate from "../../utils/authenticate";
 import UserContext from "../../Context";
 
-class Register extends Component {
-    constructor(props) {
-        super(props)
+const Register = () => {
+    const [username, setUsername] = useState('')
+    const [password, setPassword] = useState('')
+    const [rePassword, setRePassword] = useState('')
+    const context = useContext(UserContext)
+    const history = useHistory()
 
-        this.state = {
-            username: "",
-            password: "",
-            rePassword: ""
-        }
-    }
-
-    static contextType = UserContext
-
-    onChange = (event, type) => {
-        const newState = {}
-        newState[type] = event.target.value
-
-        this.setState(newState)
-    }
-
-    onSubmit = async (event) => {
+    const onSubmit = async (event) => {
         event.preventDefault()
-        const { username, password, rePassword } = this.state
 
-        // await authenticate('http://localhost:3000/register', {
         await authenticate('http://localhost:9999/api/user/register', {
             username,
             password,
             rePassword
         }, (user) => {
-            this.context.login(user)
-            this.props.history.push('/')
+            context.logIn(user)
+            history.push('/')
         }, (e) => {
-            console.log('Error', e);
+            console.log('Error', e)
         }
         )
     }
 
-    render() {
-        const { username, password, rePassword } = this.state
-
-        return (
-            <Container>
-                <section className={styles.register}>
-                    <Title title="Регистрация" />
-                    <form onSubmit={this.onSubmit}>
-                        <fieldset>
-                            <legend>Register</legend>
-                            <Input
-                                type="text"
-                                value={username}
-                                onChange={(event) => this.onChange(event, 'username')}
-                                label="Username"
-                                id="username" />
-                            <Input
-                                type="password"
-                                value={password}
-                                onChange={(event) => this.onChange(event, 'password')}
-                                label="Password"
-                                id="password" />
-                            <Input
-                                type="password"
-                                value={rePassword}
-                                onChange={(event) => this.onChange(event, 'rePassword')}
-                                label="Re-Password"
-                                id="re-password" />
-                            <Submit title="Регистриране" />
-                        </fieldset>
-                    </form>
-                </section>
-            </Container>
-        )
-    }
+    return (
+        <Container>
+            <section className={styles.register}>
+                <Title title="Регистрация" />
+                <form onSubmit={onSubmit}>
+                    <fieldset>
+                        <legend>Register</legend>
+                        <Input
+                            type="text"
+                            value={username}
+                            onChange={(event) => setUsername(event.target.value)}
+                            label="Username"
+                            id="username" />
+                        <Input
+                            type="password"
+                            value={password}
+                            onChange={(event) => setPassword(event.target.value)}
+                            label="Password"
+                            id="password" />
+                        <Input
+                            type="password"
+                            value={rePassword}
+                            onChange={(event) => setRePassword(event.target.value)}
+                            label="Re-Password"
+                            id="re-password" />
+                        <Submit title="Регистриране" />
+                    </fieldset>
+                </form>
+            </section>
+        </Container>
+    )
 }
 
 export default Register
