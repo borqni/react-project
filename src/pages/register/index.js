@@ -31,6 +31,7 @@ class Register extends Component {
         event.preventDefault()
         const { username, password, rePassword } = this.state
 
+        // await authenticate('http://localhost:3000/register', {
         await authenticate('http://localhost:9999/api/user/register', {
             username,
             password,
