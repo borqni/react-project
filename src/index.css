@@ -60,14 +60,14 @@ h4 { font-size: 1.6rem; }
 h5 { font-size: 1.4rem; }
 h6 { font-size: 1.2rem; }
 
-.main {
+/* .main {
   background: linear-gradient(rgba(250, 248, 248, 0.2), rgba(25, 167, 173, 0.2)),  no-repeat center;
   background-size: cover;
   height: 85vh;
   position: relative;
   overflow: hidden;
   text-align: center;
-}
+} */
 
 a {
   text-decoration: none;
