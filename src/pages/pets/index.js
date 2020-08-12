@@ -49,8 +49,94 @@ class Pets extends Component {
                 </nav> */}
                 <div className={styles.container}>
                     {this.renderPets()}
-                </div>
+                    {/* <div> */}
+                    <section className={styles.pets}>
+                        <h3>Name: Gosho</h3>
+                        <p>Category: Cat</p>
+                        <p className={styles.img}><img src="https://pics.clipartpng.com/Cat_PNG_Clip_Art-2580.png" /></p>
+                        <p class="description">This is not my cat Gosho</p>
+                        <div class="pet-info">
+                            <a href="#"><button class="button"><i class="fas fa-heart"></i> Pet</button></a>
+                            <a href="#"><button class="button">Details</button></a>
+                        </div>
+                    </section>
+                    <section className={styles.pets}>
+                        <h3>Name: Gosho</h3>
+                        <p>Category: Cat</p>
+                        <p className={styles.img}><img src="https://pics.clipartpng.com/Cat_PNG_Clip_Art-2580.png" /></p>
+                        <p class="description">This is not my cat Gosho</p>
+                        <div class="pet-info">
+                            <a href="#"><button class="button"><i class="fas fa-heart"></i> Pet</button></a>
+                            <a href="#"><button class="button">Details</button></a>
+                        </div>
+                    </section><section className={styles.pets}>
+                        <h3>Name: Gosho</h3>
+                        <p>Category: Cat</p>
+                        <p className={styles.img}><img src="https://pics.clipartpng.com/Cat_PNG_Clip_Art-2580.png" /></p>
+                        <p class="description">This is not my cat Gosho</p>
+                        <div class="pet-info">
+                            <a href="#"><button class="button"><i class="fas fa-heart"></i> Pet</button></a>
+                            <a href="#"><button class="button">Details</button></a>
+                        </div>
+                    </section><section className={styles.pets}>
+                        <h3>Name: Gosho</h3>
+                        <p>Category: Cat</p>
+                        <p className={styles.img}><img src="https://pics.clipartpng.com/Cat_PNG_Clip_Art-2580.png" /></p>
+                        <p class="description">This is not my cat Gosho</p>
+                        <div class="pet-info">
+                            <a href="#"><button class="button"><i class="fas fa-heart"></i> Pet</button></a>
+                            <a href="#"><button class="button">Details</button></a>
+                        </div>
+                    </section><section className={styles.pets}>
+                        <h3>Name: Gosho</h3>
+                        <p>Category: Cat</p>
+                        <p className={styles.img}><img src="https://pics.clipartpng.com/Cat_PNG_Clip_Art-2580.png" /></p>
+                        <p class="description">This is not my cat Gosho</p>
+                        <div class="pet-info">
+                            <a href="#"><button class="button"><i class="fas fa-heart"></i> Pet</button></a>
+                            <a href="#"><button class="button">Details</button></a>
+                        </div>
+                    </section><section className={styles.pets}>
+                        <h3>Name: Gosho</h3>
+                        <p>Category: Cat</p>
+                        <p className={styles.img}><img src="https://pics.clipartpng.com/Cat_PNG_Clip_Art-2580.png" /></p>
+                        <p class="description">This is not my cat Gosho</p>
+                        <div class="pet-info">
+                            <a href="#"><button class="button"><i class="fas fa-heart"></i> Pet</button></a>
+                            <a href="#"><button class="button">Details</button></a>
+                        </div>
+                    </section><section className={styles.pets}>
+                        <h3>Name: Gosho</h3>
+                        <p>Category: Cat</p>
+                        <p className={styles.img}><img src="https://pics.clipartpng.com/Cat_PNG_Clip_Art-2580.png" /></p>
+                        <p class="description">This is not my cat Gosho</p>
+                        <div class="pet-info">
+                            <a href="#"><button class="button"><i class="fas fa-heart"></i> Pet</button></a>
+                            <a href="#"><button class="button">Details</button></a>
+                        </div>
+                    </section><section className={styles.pets}>
+                        <h3>Name: Gosho</h3>
+                        <p>Category: Cat</p>
+                        <p className={styles.img}><img src="https://pics.clipartpng.com/Cat_PNG_Clip_Art-2580.png" /></p>
+                        <p class="description">This is not my cat Gosho</p>
+                        <div class="pet-info">
+                            <a href="#"><button class="button"><i class="fas fa-heart"></i> Pet</button></a>
+                            <a href="#"><button class="button">Details</button></a>
+                        </div>
+                    </section><section className={styles.pets}>
+                        <h3>Name: Gosho</h3>
+                        <p>Category: Cat</p>
+                        <p className={styles.img}><img src="https://pics.clipartpng.com/Cat_PNG_Clip_Art-2580.png" /></p>
+                        <p class="description">This is not my cat Gosho</p>
+                        <div class="pet-info">
+                            <a href="#"><button class="button"><i class="fas fa-heart"></i> Pet</button></a>
+                            <a href="#"><button class="button">Details</button></a>
+                        </div>
+                    </section>
 
+
+                    {/* </div> */}
+                </div>
             </Container >
         )
     }

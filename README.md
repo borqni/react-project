@@ -1,1 +1,2 @@
-npm install nodemon --save-dev
+user: ani
+pass: 123-ani

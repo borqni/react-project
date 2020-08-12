@@ -2,7 +2,7 @@ const models = require('../models');
 
 module.exports = {
     get: (req, res, next) => {
-        models.Pet.find()
+        models.Pet.find().sort('-created_at')
             .then((pet) => res.send(pet))
             .catch(next);
     },

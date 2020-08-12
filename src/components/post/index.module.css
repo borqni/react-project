@@ -1,15 +1,16 @@
-.post{
-    text-align: center
-}
-
-.title{
-    text-align: center
-}
-
-.image{
-    text-align: center
-}
-
-.author{
-    text-align: center
-}
+  .post {
+    /* width: 30%; */
+    display: flex;
+    flex-direction: column;
+    background: rgba(235, 213, 167, 0.7);
+    align-items: center;
+    border: solid;
+    flex-wrap: wrap;
+    margin: 20px;
+    /* background: rgba(235, 213, 167, 0.7); */
+    } 
+  
+    textarea {
+width: 800px;
+height: 100px;
+    }

@@ -12,7 +12,7 @@ const Navigation = () => {
     return (
         <BrowserRouter>
             <Switch>
-                <Route path="/" exact component={Posts} />
+                <Route path="/" exact component={Pets} />
                 <Route path="/posts" component={Posts} />
                 <Route path="/pets" component={Pets} />
                 <Route path="/register" component={Register} />

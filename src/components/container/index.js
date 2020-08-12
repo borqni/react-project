@@ -10,7 +10,6 @@ const Container = (props) => {
             <Header />
 
             <div className={styles.container}>
-                {/* <Aside/> */}
                 {props.children}
             </div>
 
