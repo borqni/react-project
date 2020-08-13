@@ -4,17 +4,18 @@
     text-decoration: none;
     align-self: center;  
     text-align: center;
-    padding-top: 6px;
+    padding: 5px;
     margin-right: 5px;
     background-color: chocolate;
     width: 150px;
     height: 25px;
     cursor: pointer;
+    font: 1.7rem bold;
 }
 
 .a {
     text-decoration: none;
-    color: azure;
+    color: azure;    
 }
 
 .li:hover {

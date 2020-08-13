@@ -33,6 +33,10 @@ const getNavigation = (user) => {
             link: "/posts"
         },
         {
+            title: "Животни",
+            link: "/pets"
+        },
+        {
             title: "Вход",
             link: "/login"
         },
