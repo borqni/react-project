@@ -7,9 +7,15 @@
   flex-wrap: wrap;
   margin: 20px;
   padding: 20px;
+  /* color: black; */
   /* background: rgba(235, 213, 167, 0.7); */
 } 
- 
-p {
+
+.p, .author {
+  color: rgb(36, 17, 1);
   font-size: 15px;
+  font-weight:bold;
+}
+h3{
+  color: rgb(36, 17, 1);
 }

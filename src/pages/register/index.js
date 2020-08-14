@@ -1,4 +1,4 @@
-import React, { useState, useContext } from 'react'
+import React, { Component, useState, useContext } from 'react'
 import { useHistory } from "react-router-dom"
 import styles from './index.module.css'
 import Title from '../../components/title'
@@ -15,7 +15,7 @@ const Register = () => {
     const context = useContext(UserContext)
     const history = useHistory()
 
-    const onSubmit = async (event) => {
+    const handleSubmit = async (event) => {
         event.preventDefault()
 
         await authenticate('http://localhost:9999/api/user/register', {
@@ -35,7 +35,7 @@ const Register = () => {
         <Container>
             <section className={styles.register}>
                 <Title title="Регистрация" />
-                <form onSubmit={onSubmit}>
+                <form onSubmit={handleSubmit}>
                     <fieldset>
                         <legend>Register</legend>
                         <Input

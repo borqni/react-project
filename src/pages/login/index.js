@@ -32,7 +32,7 @@ const Login = () => {
     return (
         <Container>
             {/* <section > */}
-            <form className={styles.login} handleSubmit={handleSubmit}>
+            <form className={styles.login} onSubmit={handleSubmit}>
                 <Title title="Вход" />
                 <fieldset>
                     <legend>Login</legend>

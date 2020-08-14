@@ -63,6 +63,88 @@ class Pets extends Component {
                         </div>
                     </section>
 
+
+                    <section className={styles.pets}>
+                        <h3>Name: Пешо</h3>
+                        <p>Category: Други</p>
+                        <p className={styles.img}><img src="https://miau.bg/files/lib/600x350/ferret1-porche.jpg" /></p>
+                        <p class="description">This is not my pet Gosho</p>
+                        <div class="pet-info">
+                            <i class="fas fa-heart"></i><Submit title="Харесай" />
+                            <Submit title="Коментирай" />
+                        </div>
+                    </section>
+                    <section className={styles.pets}>
+                        <h3>Name: Пешо</h3>
+                        <p>Category: Други</p>
+                        <p className={styles.img}><img src="https://miau.bg/files/lib/600x350/ferret1-porche.jpg" /></p>
+                        <p class="description">This is not my pet Gosho</p>
+                        <div class="pet-info">
+                            <i class="fas fa-heart"></i><Submit title="Харесай" />
+                            <Submit title="Коментирай" />
+                        </div>
+                    </section>
+                    <section className={styles.pets}>
+                        <h3>Name: Пешо</h3>
+                        <p>Category: Други</p>
+                        <p className={styles.img}><img src="https://miau.bg/files/lib/600x350/ferret1-porche.jpg" /></p>
+                        <p class="description">This is not my pet Gosho</p>
+                        <div class="pet-info">
+                            <i class="fas fa-heart"></i><Submit title="Харесай" />
+                            <Submit title="Коментирай" />
+                        </div>
+                    </section>
+                    <section className={styles.pets}>
+                        <h3>Name: Пешо</h3>
+                        <p>Category: Други</p>
+                        <p className={styles.img}><img src="https://miau.bg/files/lib/600x350/ferret1-porche.jpg" /></p>
+                        <p class="description">This is not my pet Gosho</p>
+                        <div class="pet-info">
+                            <i class="fas fa-heart"></i><Submit title="Харесай" />
+                            <Submit title="Коментирай" />
+                        </div>
+                    </section>
+                    <section className={styles.pets}>
+                        <h3>Name: Пешо</h3>
+                        <p>Category: Други</p>
+                        <p className={styles.img}><img src="https://miau.bg/files/lib/600x350/ferret1-porche.jpg" /></p>
+                        <p class="description">This is not my pet Gosho</p>
+                        <div class="pet-info">
+                            <i class="fas fa-heart"></i><Submit title="Харесай" />
+                            <Submit title="Коментирай" />
+                        </div>
+                    </section>
+                    <section className={styles.pets}>
+                        <h3>Name: Пешо</h3>
+                        <p>Category: Други</p>
+                        <p className={styles.img}><img src="https://miau.bg/files/lib/600x350/ferret1-porche.jpg" /></p>
+                        <p class="description">This is not my pet Gosho</p>
+                        <div class="pet-info">
+                            <i class="fas fa-heart"></i><Submit title="Харесай" />
+                            <Submit title="Коментирай" />
+                        </div>
+                    </section>
+                    <section className={styles.pets}>
+                        <h3>Name: Пешо</h3>
+                        <p>Category: Други</p>
+                        <p className={styles.img}><img src="https://miau.bg/files/lib/600x350/ferret1-porche.jpg" /></p>
+                        <p class="description">This is not my pet Gosho</p>
+                        <div class="pet-info">
+                            <i class="fas fa-heart"></i><Submit title="Харесай" />
+                            <Submit title="Коментирай" />
+                        </div>
+                    </section>
+                    <section className={styles.pets}>
+                        <h3>Name: Пешо</h3>
+                        <p>Category: Други</p>
+                        <p className={styles.img}><img src="https://miau.bg/files/lib/600x350/ferret1-porche.jpg" /></p>
+                        <p class="description">This is not my pet Gosho</p>
+                        <div class="pet-info">
+                            <i class="fas fa-heart"></i><Submit title="Харесай" />
+                            <Submit title="Коментирай" />
+                        </div>
+                    </section>
+
                     {/* </div> */}
                 </div>
             </Container >

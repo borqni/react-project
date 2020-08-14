@@ -5,16 +5,3 @@
     color: chocolate;
     /* background: rgba(235, 213, 167, 0.7); */
 }
-.btn {
-    /* display: block; */
-    padding: 0.6rem 1rem;
-    border-radius: 0.4rem;
-    text-decoration: none;
-    font-weight: bold;
-    background: chocolate;
-    color: rgb(255, 255, 255);
-    border: none;
-    font-size: 1rem;
-    text-align: center;
-    margin: 4px;
-}

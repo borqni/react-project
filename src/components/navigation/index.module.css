@@ -4,13 +4,15 @@
     text-decoration: none;
     align-self: center;  
     text-align: center;
-    padding: 5px;
+    /* padding: 5px; */
+    padding: 0.6rem 1rem;
+    border-radius: 0.4rem;
     margin-right: 5px;
     background-color: chocolate;
-    width: 150px;
-    height: 25px;
+    /* width: 150px;
+    height: 25px; */
     cursor: pointer;
-    font: 1.7rem bold;
+    font: 1.4rem bold;
 }
 
 .a {
