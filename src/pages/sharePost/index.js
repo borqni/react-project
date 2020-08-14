@@ -1,5 +1,5 @@
 import React, { useState } from 'react'
-import styles from './index.module.css'
+// import styles from './index.module.css'
 import Container from '../../components/container'
 import Title from '../../components/title'
 import Posts from '../../components/posts'

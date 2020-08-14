@@ -3,6 +3,7 @@ import Container from '../../components/container'
 import styles from './index.module.css'
 import Pet from '../../components/pet'
 import Title from '../../components/title'
+import Submit from '../../components/submit-button'
 
 class Pets extends Component {
     constructor(props) {
@@ -57,90 +58,11 @@ class Pets extends Component {
                         <p className={styles.img}><img src="https://miau.bg/files/lib/600x350/ferret1-porche.jpg" /></p>
                         <p class="description">This is not my pet Gosho</p>
                         <div class="pet-info">
-                            <a href="#"><button class="button"><i class="fas fa-heart"></i> Pet</button></a>
-                            <a href="#"><button class="button">Details</button></a>
+                            <i class="fas fa-heart"></i><Submit title="Харесай" />
+                            <Submit title="Коментирай" />
                         </div>
                     </section>
-                    <section className={styles.pets}>
-                        <h3>Name: Пешо</h3>
-                        <p>Category: Други</p>
-                        <p className={styles.img}><img src="https://miau.bg/files/lib/600x350/ferret1-porche.jpg" /></p>
-                        <p class="description">This is not my pet Gosho</p>
-                        <div class="pet-info">
-                            <a href="#"><button class="button"><i class="fas fa-heart"></i> Pet</button></a>
-                            <a href="#"><button class="button">Details</button></a>
-                        </div>
-                    </section>
-                    <section className={styles.pets}>
-                        <h3>Name: Пешо</h3>
-                        <p>Category: Други</p>
-                        <p className={styles.img}><img src="https://miau.bg/files/lib/600x350/ferret1-porche.jpg" /></p>
-                        <p class="description">This is not my pet Gosho</p>
-                        <div class="pet-info">
-                            <a href="#"><button class="button"><i class="fas fa-heart"></i> Pet</button></a>
-                            <a href="#"><button class="button">Details</button></a>
-                        </div>
-                    </section>
-                    <section className={styles.pets}>
-                        <h3>Name: Пешо</h3>
-                        <p>Category: Други</p>
-                        <p className={styles.img}><img src="https://miau.bg/files/lib/600x350/ferret1-porche.jpg" /></p>
-                        <p class="description">This is not my pet Gosho</p>
-                        <div class="pet-info">
-                            <a href="#"><button class="button"><i class="fas fa-heart"></i> Pet</button></a>
-                            <a href="#"><button class="button">Details</button></a>
-                        </div>
-                    </section>
-                    <section className={styles.pets}>
-                        <h3>Name: Пешо</h3>
-                        <p>Category: Други</p>
-                        <p className={styles.img}><img src="https://miau.bg/files/lib/600x350/ferret1-porche.jpg" /></p>
-                        <p class="description">This is not my pet Gosho</p>
-                        <div class="pet-info">
-                            <a href="#"><button class="button"><i class="fas fa-heart"></i> Pet</button></a>
-                            <a href="#"><button class="button">Details</button></a>
-                        </div>
-                    </section>
-                    <section className={styles.pets}>
-                        <h3>Name: Пешо</h3>
-                        <p>Category: Други</p>
-                        <p className={styles.img}><img src="https://miau.bg/files/lib/600x350/ferret1-porche.jpg" /></p>
-                        <p class="description">This is not my pet Gosho</p>
-                        <div class="pet-info">
-                            <a href="#"><button class="button"><i class="fas fa-heart"></i> Pet</button></a>
-                            <a href="#"><button class="button">Details</button></a>
-                        </div>
-                    </section>
-                    <section className={styles.pets}>
-                        <h3>Name: Пешо</h3>
-                        <p>Category: Други</p>
-                        <p className={styles.img}><img src="https://miau.bg/files/lib/600x350/ferret1-porche.jpg" /></p>
-                        <p class="description">This is not my pet Gosho</p>
-                        <div class="pet-info">
-                            <a href="#"><button class="button"><i class="fas fa-heart"></i> Pet</button></a>
-                            <a href="#"><button class="button">Details</button></a>
-                        </div>
-                    </section>
-                    <section className={styles.pets}>
-                        <h3>Name: Пешо</h3>
-                        <p>Category: Други</p>
-                        <p className={styles.img}><img src="https://miau.bg/files/lib/600x350/ferret1-porche.jpg" /></p>
-                        <p class="description">This is not my pet Gosho</p>
-                        <div class="pet-info">
-                            <a href="#"><button class="button"><i class="fas fa-heart"></i> Pet</button></a>
-                            <a href="#"><button class="button">Details</button></a>
-                        </div>
-                    </section>
-                    <section className={styles.pets}>
-                        <h3>Name: Пешо</h3>
-                        <p>Category: Други</p>
-                        <p className={styles.img}><img src="https://miau.bg/files/lib/600x350/ferret1-porche.jpg" /></p>
-                        <p class="description">This is not my pet Gosho</p>
-                        <div class="pet-info">
-                            <a href="#"><button class="button"><i class="fas fa-heart"></i> Pet</button></a>
-                            <a href="#"><button class="button">Details</button></a>
-                        </div>
-                    </section>
+
                     {/* </div> */}
                 </div>
             </Container >

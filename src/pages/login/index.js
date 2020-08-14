@@ -14,7 +14,7 @@ const Login = () => {
     const context = useContext(UserContext)
     const history = useHistory()
 
-    const onSubmit = async (event) => {
+    const handleSubmit = async (event) => {
         event.preventDefault()
 
         await authenticate('http://localhost:9999/api/user/login', {
@@ -31,28 +31,28 @@ const Login = () => {
 
     return (
         <Container>
-            <section className={styles.login}>
+            {/* <section > */}
+            <form className={styles.login} handleSubmit={handleSubmit}>
                 <Title title="Вход" />
-                <form onSubmit={onSubmit}>
-                    <fieldset>
-                        <legend>Login</legend>
-                        <Input
-                            // type="text"
-                            value={username}
-                            onChange={e => setUsername(e.target.value)}
-                            label="Username"
-                            id="username" />
-                        <Input
-                            type="password"
-                            value={password}
-                            onChange={e => setPassword(e.target.value)}
-                            label="Password"
-                            id="password" />
-                        <Submit title="Влез" />
-                        {/* <input class="button" type="submit" class="submit" value="Login" /> */}
-                    </fieldset>
-                </form>
-            </section>
+                <fieldset>
+                    <legend>Login</legend>
+                    <Input
+                        // type="text"
+                        value={username}
+                        onChange={e => setUsername(e.target.value)}
+                        label="Username"
+                        id="username" />
+                    <Input
+                        type="password"
+                        value={password}
+                        onChange={e => setPassword(e.target.value)}
+                        label="Password"
+                        id="password" />
+                    <Submit title="Влез" />
+                    {/* <input class="button" type="submit" class="submit" value="Login" /> */}
+                </fieldset>
+            </form>
+            {/* </section> */}
         </Container>
     )
 }

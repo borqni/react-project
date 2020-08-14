@@ -1,6 +1,5 @@
 import React from 'react'
 import styles from './index.module.css'
-// import Posts from './components/posts'
 import Header from '../header'
 import Footer from '../footer'
 

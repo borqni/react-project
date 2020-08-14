@@ -3,7 +3,7 @@ import styles from './index.module.css'
 
 const Submit = ({ title, onClick }) => {
     return (
-        <button type="submit" onClick={onClick} >{title}</button>
+        <button className={styles.submit} type="submit" onClick={onClick} >{title}</button>
     )
 }
 
