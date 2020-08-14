@@ -35,4 +35,4 @@ const postSchema = new Schema({
 
 }, { timestamps: { createdAt: 'created_at' } });
 
-module.exports = new Model('News', postSchema);
+module.exports = new Model('Post', postSchema);

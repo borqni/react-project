@@ -19,7 +19,9 @@ const userSchema = new Schema({
         require: true
     },
 
-    pets: [{ type: ObjectId, ref: "Pets" }]
+    pets: [{ type: ObjectId, ref: "Pets" }],
+
+    posts: [{ type: ObjectId, ref: "Posts" }]
 
 });
 

@@ -1,11 +1,9 @@
 import React, { useContext, useState, useEffect, useCallback } from 'react'
 import { useParams, useHistory } from 'react-router-dom'
 import styles from './index.module.css'
-import Container from "../../components/container";
-import Submit from '../../components/submit-button'
-import Input from "../../components/input";
-import Pet from "../../components/pet";
-import UserContext from "../../Context";
+import Container from "../../components/container"
+import Pets from "../../components/pets"
+import UserContext from "../../Context"
 
 const Profile = () => {
     const [username, setUsername] = useState(null)
@@ -28,7 +26,7 @@ const Profile = () => {
         } else {
             const user = await response.json()
             setUsername(user.username)
-            setPets(user.pets && user.pets.length)
+            setPets(user.pets)
         }
     }, [params.userid, history])
 
@@ -41,16 +39,13 @@ const Profile = () => {
         <Container>
             <div >
                 {/* <img src={image} /> */}
-                <div className={styles.profileInfo}>
+                <div >
                     <p>Username: {username}</p>
-                    <p >Has {pets} pets </p>
-                    <div className={styles.myPets}>
-                        {/* pets.map(pet) */}
-                    </div>
+                    <p >Has {pets.length} pets </p>
+                    <Pets />
                 </div>
                 <button onClick={logOut}>Logout</button>
             </div>
-            <Pet />
         </Container>
     )
 }

@@ -1,3 +1,9 @@
 .field{
     color: chocolate;
+    padding: 4px;
+    margin: 2px;
+}
+
+input {
+margin-left: 4px;
 }

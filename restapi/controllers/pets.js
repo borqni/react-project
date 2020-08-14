@@ -26,7 +26,7 @@ module.exports = {
 
     delete: (req, res, next) => {
         const id = req.params.id;
-        models.Pets.deleteOne({ _id: id })
+        models.Pet.deleteOne({ _id: id })
             .then((removedPet) => res.send(removedPet))
             .catch(next)
     }
