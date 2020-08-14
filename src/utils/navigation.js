@@ -37,17 +37,30 @@ const getNavigation = (user) => {
             link: "/posts"
         },
         {
+            title: "Добави статия",
+            link: "/sharePost"
+        },
+        {
             title: "Животни",
             link: "/pets"
+        },
+        {
+            title: "Добави животно",
+            link: "/sharePet"
+        },
+        {
+            title: "Профил",
+            link: `/profile/${user && user.id}`
+        },
+        {
+            title: "Изход",
+            link: "/logout"
         },
         {
             title: "Вход",
             link: "/login"
         },
-        // {
-        //     title: "Профил",
-        //     link: `/profile/${user && user.id}`
-        // },
+
         {
             title: "Регистрация",
             link: "/register"
